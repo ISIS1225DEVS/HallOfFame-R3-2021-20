@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2f5348a31c774c2ca8845a35ce9f3d4d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2f5348a31c774c2ca8845a35ce9f3d4d" ></div>
+        
+</body>
+<script>    
+    
+            var map_2f5348a31c774c2ca8845a35ce9f3d4d = L.map(
+                "map_2f5348a31c774c2ca8845a35ce9f3d4d",
+                {
+                    center: [34.165, -106.025],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_30c1d7a2f25948039358022ca8ed281f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2f5348a31c774c2ca8845a35ce9f3d4d);
+        
+    
+            var rectangle_156cd745a0c94b9581b1918e180cf6fb = L.rectangle(
+                [[31.33, -109.05], [37.0, -103.0]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2f5348a31c774c2ca8845a35ce9f3d4d);
+        
+    
+            var marker_37f4d98500904d8b8d838f3c2044a122 = L.marker(
+                [31.7586111, -106.4863889],
+                {}
+            ).addTo(map_2f5348a31c774c2ca8845a35ce9f3d4d);
+        
+    
+            var icon_bd35c7d05c1b4f4cb3014c2684592c13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "reddit-alien", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_37f4d98500904d8b8d838f3c2044a122.setIcon(icon_bd35c7d05c1b4f4cb3014c2684592c13);
+        
+    
+        var popup_6de86e0370e544d99b07bcf3abb03682 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_334785b7f184456eb25ee095f3c50ffa = $(`<div id="html_334785b7f184456eb25ee095f3c50ffa" style="width: 100.0%; height: 100.0%;"><style>                             table,                             th,                             td {                                 padding: 10px;                                 border: 1px solid black;                                 border-collapse: collapse;                                 }                             </style> <table>                                  <tr>                                      <th>City</th>                                     <th>Datetime</th>                                     <th>Duration [s]</th>                                     <th>Shape</th>                                     <th>Comments</th>                                 </tr>                                 <tr>                                     <td>el paso</td>                                     <td>2002-12-14 05:00:00</td>                                     <td>120.0</td>                                     <td>unknown</td>                                     <td>Freeway Arc Light</td>                                  </tr>                             </table></div>`)[0];
+            popup_6de86e0370e544d99b07bcf3abb03682.setContent(html_334785b7f184456eb25ee095f3c50ffa);
+        
+
+        marker_37f4d98500904d8b8d838f3c2044a122.bindPopup(popup_6de86e0370e544d99b07bcf3abb03682)
+        ;
+
+        
+    
+    
+            marker_37f4d98500904d8b8d838f3c2044a122.bindTooltip(
+                `<div>
+                     El Paso
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8359b9bab32b4cbdb97510232ab886ff = L.marker(
+                [32.77, -108.2797222],
+                {}
+            ).addTo(map_2f5348a31c774c2ca8845a35ce9f3d4d);
+        
+    
+            var icon_76d99be212154a89b97e1e32533d0e7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "reddit-alien", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8359b9bab32b4cbdb97510232ab886ff.setIcon(icon_76d99be212154a89b97e1e32533d0e7e);
+        
+    
+        var popup_843e783928104594ba4b2c42dc41e2ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6eeaae36b8e14a8f8f850b0d5b843609 = $(`<div id="html_6eeaae36b8e14a8f8f850b0d5b843609" style="width: 100.0%; height: 100.0%;"><style>                             table,                             th,                             td {                                 padding: 10px;                                 border: 1px solid black;                                 border-collapse: collapse;                                 }                             </style> <table>                                  <tr>                                      <th>City</th>                                     <th>Datetime</th>                                     <th>Duration [s]</th>                                     <th>Shape</th>                                     <th>Comments</th>                                 </tr>                                 <tr>                                     <td>silver city</td>                                     <td>2004-08-23 21:00:00</td>                                     <td>1800.0</td>                                     <td>light</td>                                     <td>Metallic orange lights over mountains Silver City&#44 New Mexico</td>                                  </tr>                             </table></div>`)[0];
+            popup_843e783928104594ba4b2c42dc41e2ec.setContent(html_6eeaae36b8e14a8f8f850b0d5b843609);
+        
+
+        marker_8359b9bab32b4cbdb97510232ab886ff.bindPopup(popup_843e783928104594ba4b2c42dc41e2ec)
+        ;
+
+        
+    
+    
+            marker_8359b9bab32b4cbdb97510232ab886ff.bindTooltip(
+                `<div>
+                     Silver City
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e9a5f9092764ab18a69656f12a97b8e = L.marker(
+                [33.3941667, -104.5225],
+                {}
+            ).addTo(map_2f5348a31c774c2ca8845a35ce9f3d4d);
+        
+    
+            var icon_b2e4d32a397f4ba6803859185218c098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "reddit-alien", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4e9a5f9092764ab18a69656f12a97b8e.setIcon(icon_b2e4d32a397f4ba6803859185218c098);
+        
+    
+        var popup_ecf079684317407ba97ed2a135e74a31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92e3cac78c7b4b328c7cd5ed84ffabbc = $(`<div id="html_92e3cac78c7b4b328c7cd5ed84ffabbc" style="width: 100.0%; height: 100.0%;"><style>                             table,                             th,                             td {                                 padding: 10px;                                 border: 1px solid black;                                 border-collapse: collapse;                                 }                             </style> <table>                                  <tr>                                      <th>City</th>                                     <th>Datetime</th>                                     <th>Duration [s]</th>                                     <th>Shape</th>                                     <th>Comments</th>                                 </tr>                                 <tr>                                     <td>roswell</td>                                     <td>2004-08-15 00:16:00</td>                                     <td>780.0</td>                                     <td>disk</td>                                     <td>Freaky Lights and Sound i feel very cold 10 degrees</td>                                  </tr>                             </table></div>`)[0];
+            popup_ecf079684317407ba97ed2a135e74a31.setContent(html_92e3cac78c7b4b328c7cd5ed84ffabbc);
+        
+
+        marker_4e9a5f9092764ab18a69656f12a97b8e.bindPopup(popup_ecf079684317407ba97ed2a135e74a31)
+        ;
+
+        
+    
+    
+            marker_4e9a5f9092764ab18a69656f12a97b8e.bindTooltip(
+                `<div>
+                     Roswell
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7fcf186749449c0bc53a062b8b418f2 = L.marker(
+                [35.0844444, -106.6505556],
+                {}
+            ).addTo(map_2f5348a31c774c2ca8845a35ce9f3d4d);
+        
+    
+            var icon_4bac57b5fb2a40afadd9dc1f32665664 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "reddit-alien", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c7fcf186749449c0bc53a062b8b418f2.setIcon(icon_4bac57b5fb2a40afadd9dc1f32665664);
+        
+    
+        var popup_bd03672b56d247a2853ab7f384a31343 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb01590581094ecfbac5fbd94e4eafd0 = $(`<div id="html_fb01590581094ecfbac5fbd94e4eafd0" style="width: 100.0%; height: 100.0%;"><style>                             table,                             th,                             td {                                 padding: 10px;                                 border: 1px solid black;                                 border-collapse: collapse;                                 }                             </style> <table>                                  <tr>                                      <th>City</th>                                     <th>Datetime</th>                                     <th>Duration [s]</th>                                     <th>Shape</th>                                     <th>Comments</th>                                 </tr>                                 <tr>                                     <td>albuquerque</td>                                     <td>1997-02-05 22:00:00</td>                                     <td>180.0</td>                                     <td>flash</td>                                     <td>Two crafts flying onto field</td>                                  </tr>                             </table></div>`)[0];
+            popup_bd03672b56d247a2853ab7f384a31343.setContent(html_fb01590581094ecfbac5fbd94e4eafd0);
+        
+
+        marker_c7fcf186749449c0bc53a062b8b418f2.bindPopup(popup_bd03672b56d247a2853ab7f384a31343)
+        ;
+
+        
+    
+    
+            marker_c7fcf186749449c0bc53a062b8b418f2.bindTooltip(
+                `<div>
+                     Albuquerque
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6118a9c37aa349cea287bcdefb76102c = L.marker(
+                [35.0844444, -106.6505556],
+                {}
+            ).addTo(map_2f5348a31c774c2ca8845a35ce9f3d4d);
+        
+    
+            var icon_968ada67d1a2405db8fa4c94ebd3083b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "reddit-alien", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6118a9c37aa349cea287bcdefb76102c.setIcon(icon_968ada67d1a2405db8fa4c94ebd3083b);
+        
+    
+        var popup_7b482f78e6114284a34d758a83fddca0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edfe6bb05f8f43318c81129ed5a0e6d1 = $(`<div id="html_edfe6bb05f8f43318c81129ed5a0e6d1" style="width: 100.0%; height: 100.0%;"><style>                             table,                             th,                             td {                                 padding: 10px;                                 border: 1px solid black;                                 border-collapse: collapse;                                 }                             </style> <table>                                  <tr>                                      <th>City</th>                                     <th>Datetime</th>                                     <th>Duration [s]</th>                                     <th>Shape</th>                                     <th>Comments</th>                                 </tr>                                 <tr>                                     <td>albuquerque</td>                                     <td>2008-07-04 22:30:00</td>                                     <td>4.0</td>                                     <td>sphere</td>                                     <td>Sphere seen at Fourth of July Fireworks Albuquerque</td>                                  </tr>                             </table></div>`)[0];
+            popup_7b482f78e6114284a34d758a83fddca0.setContent(html_edfe6bb05f8f43318c81129ed5a0e6d1);
+        
+
+        marker_6118a9c37aa349cea287bcdefb76102c.bindPopup(popup_7b482f78e6114284a34d758a83fddca0)
+        ;
+
+        
+    
+    
+            marker_6118a9c37aa349cea287bcdefb76102c.bindTooltip(
+                `<div>
+                     Albuquerque
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcac12a03f61422f8f1cdf2e9f86e2bc = L.marker(
+                [35.1716667, -103.7244444],
+                {}
+            ).addTo(map_2f5348a31c774c2ca8845a35ce9f3d4d);
+        
+    
+            var icon_fa0c21e803664e51947ac2972254512d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "reddit-alien", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fcac12a03f61422f8f1cdf2e9f86e2bc.setIcon(icon_fa0c21e803664e51947ac2972254512d);
+        
+    
+        var popup_c3c4dd71eb764065b3ea57aaae23f298 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66c7ef21f9fe46e2a9a03763866475fc = $(`<div id="html_66c7ef21f9fe46e2a9a03763866475fc" style="width: 100.0%; height: 100.0%;"><style>                             table,                             th,                             td {                                 padding: 10px;                                 border: 1px solid black;                                 border-collapse: collapse;                                 }                             </style> <table>                                  <tr>                                      <th>City</th>                                     <th>Datetime</th>                                     <th>Duration [s]</th>                                     <th>Shape</th>                                     <th>Comments</th>                                 </tr>                                 <tr>                                     <td>tucumcari</td>                                     <td>2012-11-08 23:00:00</td>                                     <td>10.0</td>                                     <td>flash</td>                                     <td>On Hwy 54 headed North&#44 the entire sky lit up in a bright blue light beginning in the north horizon and encompassing entire 360 view.</td>                                  </tr>                             </table></div>`)[0];
+            popup_c3c4dd71eb764065b3ea57aaae23f298.setContent(html_66c7ef21f9fe46e2a9a03763866475fc);
+        
+
+        marker_fcac12a03f61422f8f1cdf2e9f86e2bc.bindPopup(popup_c3c4dd71eb764065b3ea57aaae23f298)
+        ;
+
+        
+    
+    
+            marker_fcac12a03f61422f8f1cdf2e9f86e2bc.bindTooltip(
+                `<div>
+                     Tucumcari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
